@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll the Dice</title>
+    <style>
+        .dice{
+            background:rgb(248, 147, 147);
+            width:500px;
+            height:400px;
+            text-align: center;
+            margin:0px 0px 0px 400px;
+            border:2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dice">
+    <h1 id="demo"></h1>
+    <img id="myImg" src="" width="50%" height="auto"></br><br>
+    <button onclick="clickevent()">Roll Dice</button>
+      </div>
+    <script>
+        var para;
+        var rannum;
+        function clickevent(){
+        rannum = Math.floor(Math.random() * 6) + 1;
+        para = document.getElementById("demo");
+        para.innerHTML = rannum;
+        if(rannum==1){
+            document.getElementById("myImg").src = "dice11.jpg";
+        }
+        if(rannum==2){
+            document.getElementById("myImg").src = "dice2.jpg";
+        }
+        if(rannum==3){
+            document.getElementById("myImg").src = "dice31.jpg";
+        }
+        if(rannum==4){
+            document.getElementById("myImg").src = "dice4.jpg";
+        }
+        if(rannum==5){
+            document.getElementById("myImg").src = "dice5.jpg";
+        }
+        if(rannum==6){
+            document.getElementById("myImg").src = "dice6.jpg";
+        }
+    }
+    </script>
+
+</body>
+
+</html>
